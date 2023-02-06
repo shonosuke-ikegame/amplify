@@ -21,5 +21,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_ShonosukeHandsonAPI_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ShonosukeHandsonAPI"
+        }
+      ]
+    },
+    "AMPLIFY_function_ShonosukeHandsonAPI_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ShonosukeHandsonAPI"
+        }
+      ]
+    }
   }
 }

@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Amplify, API } from 'aws-amplify'
+import { useEffect, useState } from 'react'
+import awsconfig from './aws-exports'
+Amplify.configure(awsconfig)
 
 function App() {
+  const [wikis, setWikis] = useState([])
+  useEffect(() => {
+    const execRq = async () => {
+      const wikiObj = (await API.get('shonosukeapi', '/handson')).query.pages
+
+      const wikiArr = Object.entries(wikiObj).map(([_, val]) => val)
+      console.log(wikiArr)
+      setWikis(wikiArr)
+    }
+    execRq()
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+           {' '}
+      {wikis.map((w) => {
+        return (
+          <div key={w.pageid}>
+                        {w.title}
+            {w.extract}         {' '}
+          </div>
+        )
+      })}
+         {' '}
     </div>
-  );
+  )
 }
-
-export default App;
+export default App

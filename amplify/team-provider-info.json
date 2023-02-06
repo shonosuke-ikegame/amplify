@@ -13,7 +13,10 @@
     },
     "categories": {
       "function": {
-        "ShonosukeHandsonAPI": {}
+        "ShonosukeHandsonAPI": {
+          "deploymentBucketName": "amplify-shonosukeamplify-main-73418-deployment",
+          "s3Key": "amplify-builds/ShonosukeHandsonAPI-7041515a725564667a37-build.zip"
+        }
       }
     }
   }
