@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/handson": {
+      "name": "/handson",
+      "lambdaFunction": "ShonosukeHandsonAPI",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

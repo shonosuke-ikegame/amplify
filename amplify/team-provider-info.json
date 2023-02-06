@@ -1,0 +1,20 @@
+{
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-shonosukeamplify-main-73418-authRole",
+      "UnauthRoleArn": "arn:aws:iam::101211294490:role/amplify-shonosukeamplify-main-73418-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::101211294490:role/amplify-shonosukeamplify-main-73418-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-shonosukeamplify-main-73418-deployment",
+      "UnauthRoleName": "amplify-shonosukeamplify-main-73418-unauthRole",
+      "StackName": "amplify-shonosukeamplify-main-73418",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:101211294490:stack/amplify-shonosukeamplify-main-73418/aa6911a0-a5f0-11ed-a691-0a496ca55d09",
+      "AmplifyAppId": "d36k25xx1t4tmu"
+    },
+    "categories": {
+      "function": {
+        "ShonosukeHandsonAPI": {}
+      }
+    }
+  }
+}
